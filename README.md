@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Contact form with SendGrid, Next.js and Tailwindcss
 
-## Getting Started
+A working contact form for your Next.js application - Integrated with SendGrid's API for sending emails.
 
-First, run the development server:
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demos/homepage.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demos/email.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org) for creating a contact form landing page
+- [Tailwindcss](https://tailwindcss.com) for styling the components
+- [SendGrid](https://sendgrid.com) for sending emails using their APIs
+- [Vercel](https://vercel.com) for hosting our application and CI/CD
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Application Flow
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- The end-user fills in the mandotary 4 fields and clicks on submit.
+- On submit, `handleSubmit` function gets triggered.
+- `handleSubmit` validates the form for input fields and checks if they are not empty.
+- If the form fields are not empty, an API call is made to `api/sendgrid` where the logic of sending emails live.
+- In `api/sendgrid`, `@sendgrid/mail` modules initializes a `send` function, that takes it your application's API keys and send' the email with the required fields.
+- If email is successfully delivered, a `200` response is sent to the client, else a `400` response is sent to the client.
+- Responses are handled at frontend and appropriate messages are displayed.
 
-## Learn More
+## Live Demo and Source Code
 
-To learn more about Next.js, take a look at the following resources:
+[Live Demo](https://sendgrid-contact-form.vercel.app/)
+[Source Code](https://github.com/manuarora700/sendgrid-contact-form)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+It took me around an hour to build this application from the ground up - all thanks to Next.js, Tailwindcss and SendGrid for their extremely intuitive workflow and API semantics. Also [Tailwind Master Kit](https://tailwindmasterkit.com) for the beautiful Contact Page UI.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# License
 
-## Deploy on Vercel
+This template is completely open source and free to use. Use it for client projects or your own portfolio project. Give me credits at the footer (If you wish, it'll help me a lot :)).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
