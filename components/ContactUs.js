@@ -187,7 +187,7 @@ export default function ContactUs() {
             Lets talk about your projects.
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            Fill the form and send in your queries. I'll respond as soon as I
+            Fill the form and send in your queries. I will respond as soon as I
             can. Alternatively, You can reach out to me at my email address.
           </p>
         </div>
