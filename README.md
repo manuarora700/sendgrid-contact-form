@@ -2,9 +2,9 @@
 
 A working contact form for your Next.js application - Integrated with SendGrid's API for sending emails.
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demos/homepage.png)
+![Hompage](https://github.com/manuarora700/sendgrid-contact-form/blob/main/demos/homepage.png)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demos/email.png)
+![Hompage](https://github.com/manuarora700/sendgrid-contact-form/blob/main/demos/email.png)
 
 ## Tech Stack
 
