@@ -6,7 +6,7 @@ A working contact form for your Next.js application - Integrated with SendGrid's
 
 ![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demos/email.png)
 
-### Tech Stack
+## Tech Stack
 
 - [Next.js](https://nextjs.org) for creating a contact form landing page
 - [Tailwindcss](https://tailwindcss.com) for styling the components
@@ -22,6 +22,20 @@ A working contact form for your Next.js application - Integrated with SendGrid's
 - In `api/sendgrid`, `@sendgrid/mail` modules initializes a `send` function, that takes it your application's API keys and send' the email with the required fields.
 - If email is successfully delivered, a `200` response is sent to the client, else a `400` response is sent to the client.
 - Responses are handled at frontend and appropriate messages are displayed.
+
+## Environment Variables
+
+Please not that we are using the API keys and the keys are sensitive. Which means that we should always store secret or API keys in environment variables. As we already have .env.local for our local environment, The hosting provider needs to know about the API keys too.
+
+Vercel provides an easy way to store api keys on the hosting panel itself.
+
+To store the API keys securely on your Vercel account.
+
+- Goto your projects page
+- Goto settings
+- Goto Environment variables
+- Add the name of the environment variable, in our case it is SENDGRID_API_KEY and add the corresponding API key in the value field.
+- Redeploy your application and your project will work in the production environment.
 
 ## Live Demo and Source Code
 
