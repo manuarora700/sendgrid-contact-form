@@ -1,6 +1,7 @@
 ## Contact form with SendGrid, Next.js and Tailwindcss
 
 A working contact form for your Next.js application - Integrated with SendGrid's API for sending emails.
+Read the complete blog at [freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
 
 ![Hompage](https://github.com/manuarora700/sendgrid-contact-form/blob/main/demos/homepage.png)
 
