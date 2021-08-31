@@ -69,11 +69,22 @@ export default function ContactUs() {
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
         setButtonText("Send");
+
+        // Reset form fields
+        setFullname("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
+      // Reset form fields
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
     }
     console.log(fullname, email, subject, message);
   };
